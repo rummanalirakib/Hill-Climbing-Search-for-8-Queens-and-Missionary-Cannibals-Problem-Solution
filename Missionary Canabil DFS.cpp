@@ -38,7 +38,7 @@ void DFS(game var, int boat, vector<game>& v)
     if(var.leftMissionary==0 && var.leftCannibal==0){
         cout<<"Attemps: "<<++attemps<<endl;
         for(int i=0;i<v.size();i++){
-            cout<<"Step: "<<i+1<<endl;
+            cout<<"Step: "<<i<<endl;
             if(i==0){
                     cout<<"\tInitially Boat is on the Left Side"<<endl;
             }

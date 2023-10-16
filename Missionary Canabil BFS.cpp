@@ -80,7 +80,7 @@ void BFS()
         if(var.leftMissionary==0 && var.leftCannibal==0){
             cout<<"Attemps: "<<++attemps<<endl;
             v[indx].push_back(var);
-            printPath(indx, indx, 1, indx);
+            printPath(indx, indx, 0, indx);
         }
         if(var.leftMissionary<0 || var.leftCannibal<0 || var.rightCannibal<0 || var.rightMissionary<0 || var.leftMissionary>3 || var.leftCannibal>3 || var.rightCannibal>3 || var.rightMissionary>3){
             continue;

@@ -86,17 +86,17 @@ void AStarSearch()
     while(!q.empty()){
         game var=q.top();
         q.pop();
+        if(checkAgainstPrevious(var)) continue;
+        checkWithPrevious.push_back(var);
         if(var.leftMissionary==0 && var.leftCannibal==0){
             cout<<"Attemps: "<<++attemps<<endl;
             v[indx].push_back(var);
-            printPath(indx, indx, 1, indx);
+            printPath(indx, indx, 0, indx);
         }
         if(var.leftMissionary<0 || var.leftCannibal<0 || var.rightCannibal<0 || var.rightMissionary<0 || var.leftMissionary>3 || var.leftCannibal>3 || var.rightCannibal>3 || var.rightMissionary>3){
             continue;
         }
         if(checkSituation(var)) continue;
-        if(checkAgainstPrevious(var)) continue;
-        checkWithPrevious.push_back(var);
         v[indx].push_back(var);
         if(var.boat%2==0){
             var.parent=indx;
