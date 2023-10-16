@@ -8,7 +8,7 @@ Three missionaries and three cannibals are on one side of a river, along with a 
 2. Design a heuristic function for this question and explain your design.2 Then implement and solve the problem using the greedy best-first search and the A* search algorithm. Coding required. After you are done with this question, please record your computer screen with audio to show the code, run your code, and explain your solution.
 
 # Problem 2
-In the textbook, Ch.4.1.1 (Hill-climbing search), when describing hill-climbing search algorithm, it says
+In the textbook, (Hill-climbing search), when describing hill-climbing search algorithm, it says
 Starting from a randomly generated 8-queens state, steepest- ascent hill climbing gets stuck 86% of the time, solving only 14% of problem instances. On the other hand, it works quickly, taking just 4 steps on average when it succeeds and 3 when it gets stuck—not bad for a state space with 88 ≈ 17 million states.
 1. Implement steepest-ascent hill climbing for the 8-queens problem, run it 1000 times, record the steps taken in each run, then calculate on av- erage your implement takes how many steps when it succeeds, and how many steps when it fails. Also calculate among the 1000 runs, how many times it succeeds to find a solution and how many times if fails to find a solution.
 please record your computer screen with audio to show the code, run your code, and explain your solution.
